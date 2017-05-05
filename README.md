@@ -8,12 +8,12 @@
 Use your space bar to advance
 
 
-## Online
+### Online
 
 Just head over to http://tools-talk.now.sh.
 
 
-## Offline
+### Offline
 
 ```sh
 git clone https://github.com/don-smith/tools-talk
