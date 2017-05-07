@@ -33,4 +33,4 @@ Open a browser and hit [http://localhost:3000](http://localhost:3000)
 ## Attribution
 
 * Hosting platform: [Now](https://zeit.co/now)
-* Presentation framework: [Spectable](https://github.com/FormidableLabs/spectacle)
+* Presentation framework: [Spectacle](https://github.com/FormidableLabs/spectacle)
