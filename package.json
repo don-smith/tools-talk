@@ -4,14 +4,13 @@
   "description": "a presentation about giving attention to our tools",
   "main": "server.js",
   "scripts": {
-    "clean": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx .",
-    "deploy": "npm run clean & npm run build && now",
+    "deploy": "npm run build && now ./dist",
     "dev": "cross-env NODE_ENV=development node server.js",
     "start": "node server"
   },
-  "author": "",
+  "author": "Don Smith",
   "license": "MIT",
   "dependencies": {
     "normalize.css": "3.0.3",
@@ -48,10 +47,10 @@
     "is-buffer": "^1.1.1",
     "markdown-loader": "^0.1.7",
     "node-libs-browser": "^0.5.3",
+    "raw-loader": "^0.5.1",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.2.0",
-    "raw-loader": "^0.5.1",
     "rimraf": "^2.4.4",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.6",

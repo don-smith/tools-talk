@@ -1,6 +1,6 @@
 # Tools Talk
 
-> a presentation about giving attention to our tools
+> A presentation about giving attention to our tools
 
 
 ## Viewing
@@ -22,6 +22,12 @@ npm start
 ```
 
 Open a browser and hit [http://localhost:3000](http://localhost:3000)
+
+
+## Resources
+
+* [Don's dotfiles](https://github.com/don-smith/dotfiles)
+* [Don's setup guide](https://github.com/don-smith/dotfiles/wiki)
 
 
 ## Attribution

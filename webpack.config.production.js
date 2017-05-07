@@ -4,10 +4,10 @@ var path = require("path");
 var webpack = require("webpack");
 
 module.exports = {
-  entry: [
-    "babel-polyfill",
-    "./index"
-  ],
+  entry: {
+    vendor: ['babel-standalone', 'codemirror'],
+    app: './index'
+  },
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
@@ -23,6 +23,10 @@ module.exports = {
       compressor: {
         warnings: false
       }
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'vendor.js'
     })
   ],
   module: {

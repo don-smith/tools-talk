@@ -1,7 +1,4 @@
-// Import React
-import React from "react";
-
-// Import Spectacle Core tags
+import React from "react"
 import {
   BlockQuote,
   Cite,
@@ -12,25 +9,16 @@ import {
   Quote,
   Slide,
   Text
-} from "spectacle";
+} from "spectacle"
+import preloader from "spectacle/lib/utils/preloader"
+import createTheme from "spectacle/lib/themes/default"
 
-// Import image preloader util
-import preloader from "spectacle/lib/utils/preloader";
-
-// Import theme
-import createTheme from "spectacle/lib/themes/default";
-
-// Require CSS
-require("normalize.css");
-require("spectacle/lib/themes/default/index.css");
-
+require("normalize.css")
+require("spectacle/lib/themes/default/index.css")
 
 const images = {
-  city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
-  logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
-};
+  logo: require("../assets/formidable-logo.svg")
+}
 
 preloader(images);
 
@@ -42,7 +30,7 @@ const theme = createTheme({
 }, {
   primary: "Montserrat",
   secondary: "Helvetica"
-});
+})
 
 export default class Presentation extends React.Component {
   render() {
@@ -81,6 +69,6 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
       </Deck>
-    );
+    )
   }
 }
