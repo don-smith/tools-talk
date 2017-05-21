@@ -1,0 +1,11 @@
+const offerSomeGuidance = (dev) => {
+  if (dev.stillLearningHowToLearn) {
+    return learn(HOW_I_LEARN_BEST)
+  }
+
+  if (!dev.canTypeWithoutLookingAtKeyboard) {
+    return learn(TOUCH_TYPING)
+  }
+
+  dev.identifyToolsToSharpen()
+}

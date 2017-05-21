@@ -5,7 +5,7 @@
 
 ## Viewing
 
-Use your space bar to advance
+Use your space bar to advance through the slides
 
 
 ### Online

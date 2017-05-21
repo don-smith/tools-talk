@@ -1,6 +1,6 @@
 # Tools Talk Outline
 
-> Continous improvement for ... yourself
+> Continuous improvement for ... yourself
 
 ## Intended audience
 
@@ -77,7 +77,6 @@
   - Vimium for Chromium
   - VimFx for Firefox
   - [demo selecting a link, navigating back and forth and moving b/w tabs]
-  - still need the mouse to select text
 * Node.js
   - use nvm to manage versions and installations
   - optionally use .nvmrc to automatically select the node version for specific projects

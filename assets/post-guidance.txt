@@ -1,0 +1,12 @@
+const offerClosingGuidance = (dev) => {
+  dev.identify(['repetition', 'slow tasks', 'opportunities'])
+    .then(searchForTheImprovement)
+    .then(implementTheFix)
+    .then(stageCommitPush)
+    .then(useOften)
+    .catch(revistLater)
+
+  setInterval(() => {
+    dev.reviewDotfiles(update, prune)
+  }, PERIODICALLY)
+}
