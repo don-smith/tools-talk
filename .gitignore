@@ -1,5 +1,6 @@
 *.log
 .DS_Store
 node_modules
-bundle.js
-vendor.js
+app.js
+one.js
+two.js

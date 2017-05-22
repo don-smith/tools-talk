@@ -2,18 +2,21 @@
 
 var path = require("path");
 var webpack = require("webpack");
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: {
-    vendor: ['babel-standalone', 'codemirror'],
-    app: './index'
+    app: './index',
+    one: ['babel-standalone', 'codemirror'],
+    two: ['core-js', 'react-dom', 'victory-core', 'spectacle', 'styled-components']
   },
   output: {
     path: path.join(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "[name].js",
     publicPath: "/dist/"
   },
   plugins: [
+    // new BundleAnalyzerPlugin(),
     new webpack.DefinePlugin({
       "process.env": {
         "NODE_ENV": JSON.stringify("production")
@@ -25,8 +28,14 @@ module.exports = {
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'vendor.js'
+      name: 'two',
+      chunks: ['app'],
+      warnings: false
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'one',
+      chunks: ['two'],
+      warnings: false
     })
   ],
   module: {
